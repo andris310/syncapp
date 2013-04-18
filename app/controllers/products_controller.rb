@@ -1,4 +1,7 @@
 class ProductsController < ApplicationController
+
+  before_filter :auth_user
+
   # GET /products
   # GET /products.json
   def index
@@ -53,6 +56,10 @@ class ProductsController < ApplicationController
     end
   end
 
+  def import
+
+  end
+
   # PUT /products/1
   # PUT /products/1.json
   def update
@@ -79,5 +86,10 @@ class ProductsController < ApplicationController
       format.html { redirect_to products_url }
       format.json { head :no_content }
     end
+  end
+
+  private
+  def auth_user
+    redirect_to new_user_session_path unless user_signed_in?
   end
 end

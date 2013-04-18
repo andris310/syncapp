@@ -1,9 +1,14 @@
 body {
-	background-color: #F5F5F5;
+	background-color: #F8F8F8;
 }
 
 .container {
 	width: 100%;
+}
+
+.navbar-inner {
+	width: 96%;
+	margin: 10px auto;
 }
 
 /*--------------- Login Screen --------------*/ 
@@ -32,6 +37,10 @@ a:hover {
 	width: 245px;
 }
 
+#sign-in-out {
+	margin-top: 11px;
+}
+
 input {
 	height: 30px;
 }
@@ -42,12 +51,12 @@ input {
 }
 
 a:hover {
-	color: #FF572D;
+	color: #DA4B39;
 	text-decoration: none;
 }
 
 #devise_links a {
-	color: #FF572D;
+	color: #DA4B39;
 	text-decoration: none;
 }
 
@@ -78,9 +87,13 @@ a:hover {
 
 .button2 a {
 	color: white;
-	background-color: #FF8862;
-	padding: 10px;
-	border-radius: 4px;
+	background-color: #888;
+	padding: 9px;
+	border-radius: 3px;
+}
+
+.button2 a:hover {
+	background-color: #DA4B39;
 }
 
 /*-----------------Product Display ----------------*/
@@ -94,16 +107,23 @@ a:hover {
 	margin-right: 20px;
 }
 
-.product-container h3 {
+.product-container h3, .product-info td {
 	font-family: 'Raleway', sans-serif;
 }
 
+.product-info td {
+	font-size: 17px;
+	line-height: 40px;
+}
+
+
 .product-info p {
 	font-family: 'Raleway', sans-serif;
-	font-size: 25px;
+	font-size: 15px;
 	margin: 20px;
 }
 
 .product-info .data {
 	font-weight: bold;
+	font-size: 25px;
 }
