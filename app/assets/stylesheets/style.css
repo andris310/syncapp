@@ -11,12 +11,48 @@ body {
 	padding-top: 20px;
 	margin: 150px auto;
 	width: 450px;
-	height: 210px;
 	background-color: #FFF;
 }
 
+#login h2{
+	font-family: 'Raleway', sans-serif;
+	margin-left: 40px;
+	font-size: 40px;
+}
+
+a:hover {
+	color: black;
+}
+/*.controls {
+	text-align: center;
+}*/
+
+.sign-in {
+	margin: auto;
+	width: 245px;
+}
+
 input {
-	margin: 10px;
+	height: 30px;
+}
+
+#devise_links {
+	padding: 10px;
+	text-align: center;
+}
+
+a:hover {
+	color: #FF572D;
+	text-decoration: none;
+}
+
+#devise_links a {
+	color: #FF572D;
+	text-decoration: none;
+}
+
+#devise_links a:hover {
+	color: #2CBBFF;
 }
 
 .form-horizontal .controls {
@@ -33,4 +69,41 @@ input {
 
 #product_list {
 	margin: 30px;
+}
+
+/*--------------- Product Table -----------------*/
+.table-hover tbody tr:hover > td {
+	background-color: #FFEFE4;
+}
+
+.button2 a {
+	color: white;
+	background-color: #FF8862;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+/*-----------------Product Display ----------------*/
+.product-container {
+	width: 800px;
+	margin: auto;
+}
+
+.product-container img {
+	float: left;
+	margin-right: 20px;
+}
+
+.product-container h3 {
+	font-family: 'Raleway', sans-serif;
+}
+
+.product-info p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 25px;
+	margin: 20px;
+}
+
+.product-info .data {
+	font-weight: bold;
 }

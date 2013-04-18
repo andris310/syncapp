@@ -57,6 +57,7 @@ Syncapp::Application.routes.draw do
   root :to => 'pages#home'
   match '/public', :to => 'pages#public'
   match '/private', :to => 'pages#private'
+  match '/products', :to => 'products#index'
 
   # See how all your routes lay out with "rake routes"
 

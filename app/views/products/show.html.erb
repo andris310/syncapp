@@ -1,35 +1,36 @@
 <p id="notice"><%= notice %></p>
+<div class="product-container">
+    <p>
+      <h3><%= @product.product_name %></h3>
+    </p>
+      <%= image_tag(@product.picture_url, :height => 250) if @product.picture.present? %>
 
-<p>
-  <b>Product name:</b>
-  <%= @product.product_name %>
-</p>
+  <div class="product-info">
+    <table>
+    <tr>
+      <td>Sku:</td>
+      <td class="data"><%= @product.sku %></td>
+    </tr>
+    <tr>
+      <td>In stock:</td>
+      <td class="data"><%= @product.in_stock %></td>
+    </tr>
+    <tr>
+      <td>Cost:</td>
+      <td class="data"><%= @product.cost %></td>
+    </tr>
+    <tr>
+      <td>Retail Price:</td>
+      <td class="data"><%= @product.retail_price %></td>
+    </tr>
+    <tr>
+      <td>Sold:</td>
+      <td class="data"><%= @product.sold %></td>
+    </tr>
+  </table>
+  </div>
+  
 
-<p>
-  <b>Sku:</b>
-  <%= @product.sku %>
-</p>
-
-<p>
-  <b>In stock:</b>
-  <%= @product.in_stock %>
-</p>
-
-<p>
-  <b>Cost:</b>
-  <%= @product.cost %>
-</p>
-
-<p>
-  <b>Retail price:</b>
-  <%= @product.retail_price %>
-</p>
-
-<p>
-  <b>Sold:</b>
-  <%= @product.sold %>
-</p>
-
-
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+    <%= link_to 'Edit', edit_product_path(@product) %> |
+    <%= link_to 'Back', products_path %>
+</div>
