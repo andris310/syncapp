@@ -1,0 +1,37 @@
+<h1>Listing products</h1>
+<div class="container">
+    <div id="product_list">
+        <table class="table table-striped table-hover table-condensed">
+          <tr>
+            <th>Image</th>
+            <th>Product name</th>
+            <th>Sku</th>
+            <th>In stock</th>
+            <th>Cost</th>
+            <th>Retail price</th>
+            <th>Sold</th>
+            <th>Edit</th>
+            <th>Delete</th>
+            <th></th>
+          </tr>
+
+        <% @products.each do |product| %>
+          <tr>
+            <td></td>
+            <td><%= link_to product.product_name, product %></td>
+            <td><%= link_to product.sku, product %></td>
+            <td><%= product.in_stock %></td>
+            <td><%= product.cost %></td>
+            <td><%= product.retail_price %></td>
+            <td><%= product.sold %></td>
+            <td><%= link_to 'Edit', edit_product_path(product) %></td>
+            <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+        </table>
+
+        <br />
+
+        <%= link_to 'Create New Product', new_product_path %>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+body {
+	background-color: #F5F5F5;
+}
+
+.container {
+	width: 100%;
+}
+
+/*--------------- Login Screen --------------*/ 
+#login {
+	padding-top: 20px;
+	margin: 150px auto;
+	width: 450px;
+	height: 210px;
+	background-color: #FFF;
+}
+
+input {
+	margin: 10px;
+}
+
+.form-horizontal .controls {
+	margin-left: 100px;
+}
+
+.form-horizontal .control-label {
+	width: 0;
+}
+
+.btn-block {
+	width: 230px;
+}
+
+#product_list {
+	margin: 30px;
+}
