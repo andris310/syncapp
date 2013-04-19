@@ -2,8 +2,8 @@ require 'rubygems'
 require 'etsy'
 require 'pry'
 
-Etsy.api_key = 'uv8v8onkarri8yh39nvfm33i'
-Etsy.api_secret = 'tgvttqzcvw'
+Etsy.api_key = ETSY_API_KEY
+Etsy.api_secret = ETSY_SECRET
 
 request = Etsy.request_token
 binding.pry
