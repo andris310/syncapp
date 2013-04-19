@@ -9,6 +9,9 @@ gem 'sqlite3'
 gem 'devise'
 gem 'carrierwave'
 gem "etsy", "~> 0.2.1"
+gem 'amazon_seller_central'
+gem 'volusion'
+gem 'pry'
 
 # Gems used only for assets and not required
 # in production environments by default.

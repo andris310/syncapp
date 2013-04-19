@@ -11,6 +11,10 @@ body {
 	margin: 10px auto;
 }
 
+.navbar .nav > li > a:hover {
+	color: #DA4B39;
+}
+
 /*--------------- Login Screen --------------*/ 
 #login {
 	padding-top: 20px;
