@@ -60,6 +60,9 @@ Syncapp::Application.routes.draw do
   match '/products', :to => 'products#index'
   match '/setup', :to => 'setup#setup'
 
+  get '/email', :to => 'setup#email'
+  post '/send_email', :to => 'setup#send_email'
+
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
